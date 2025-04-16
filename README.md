@@ -1,73 +1,139 @@
-# Welcome to your Lovable project
 
-## Project info
+# 🚀 Welcome to xPro.li
 
-**URL**: https://lovable.dev/projects/139d16f6-3bb9-4ab4-b9f1-5a5d5d076ee7
+**xPro.li** is a sleek and modern URL shortener service designed to be fast, minimal, and developer-friendly.
 
-## How can I edit this code?
+> Live URL: [https://xpro.li](https://xpro.li)
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🛠️ Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/139d16f6-3bb9-4ab4-b9f1-5a5d5d076ee7) and start prompting.
+This project is built using:
 
-Changes made via Lovable will be committed automatically to this repo.
+- ⚡ [Vite](https://vitejs.dev/) — Fast frontend tooling
+- 🧠 [TypeScript](https://www.typescriptlang.org/) — Type-safe JavaScript
+- ⚛️ [React](https://reactjs.org/) — UI library
+- 🎨 [Tailwind CSS](https://tailwindcss.com/) — Utility-first styling
+- 🧩 [shadcn/ui](https://ui.shadcn.com/) — Beautifully styled UI components
+- 🌐 [Render](https://render.com/) — Deployed backend & frontend
+- 🌍 [Netlify](https://www.netlify.com/) — For domain + frontend hosting
+- ☁️ [MongoDB Atlas](https://www.mongodb.com/atlas/database) — Database (optional, if used)
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🧑‍💻 Development Setup
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+You can run and modify the project locally using your preferred IDE.
 
-Follow these steps:
+### 1. Clone the Repository
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+git clone <YOUR_GIT_REPO_URL>
+cd xpro.li
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 2. Install Dependencies
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 3. Start Development Server
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The app should be available at `http://localhost:5173`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 📁 Project Structure
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```
+xpro.li/
+├── public/              # Static files
+├── src/                 # Main source code
+│   ├── components/      # Reusable UI components
+│   ├── pages/           # Page components
+│   ├── hooks/           # Custom React hooks
+│   ├── lib/             # Utility functions and API logic
+│   ├── main.tsx         # App entry point
+│   └── App.tsx          # Main layout
+├── index.html
+├── tailwind.config.ts
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+```
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 🌐 Custom Domain Setup
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The frontend is hosted on **Netlify**, and the domain `xpro.li` is configured as a custom domain. To manage your domain:
 
-## How can I deploy this project?
+- Visit: [Netlify Dashboard](https://app.netlify.com/)
+- Navigate to your project → **Domain Settings**
+- Add subdomains like `api.xpro.li` or `admin.xpro.li` as needed.
 
-Simply open [Lovable](https://lovable.dev/projects/139d16f6-3bb9-4ab4-b9f1-5a5d5d076ee7) and click on Share -> Publish.
+To add a subdomain pointing to Render (for the backend):
+1. Go to your domain DNS provider.
+2. Add a CNAME or A Record pointing `api.xpro.li` to your Render backend.
+3. Add that domain inside Render’s dashboard under "Custom Domains".
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes it is!
+## 🧪 Scripts
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+| Command         | Purpose                            |
+|----------------|------------------------------------|
+| `npm run dev`  | Start local dev server             |
+| `npm run build`| Build the project for production   |
+| `npm run lint` | Run ESLint for code formatting     |
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
+
+## ☁️ Deployment
+
+- **Frontend** is deployed via **Netlify**
+- **Backend** is hosted on **Render** (Node.js / Express)
+- CI/CD setup triggers deployment on push to `main`
+
+---
+
+## 🔐 Environment Variables
+
+Make sure to add the following `.env` file in the root of your backend project:
+
+```env
+PORT=5000
+MONGO_URI=your_mongo_connection_string
+BASE_URL=https://xpro.li
+```
+
+You can securely manage these in Render’s "Environment" section.
+
+---
+
+## 🧠 Contributing
+
+Feel free to fork this repo, submit PRs, or raise issues. Let’s build a better, open shortener! 😎
+
+---
+
+## 📬 Contact
+
+If you need help or want to collaborate:
+
+- ✉️ Email: sahsisunny@gmail.com
+- 🐦 Twitter: [@sahsisunny](https://twitter.com/sahsisunny)
+- 🌍 Website: [https://xpro.li](https://xpro.li)
+
+---
+
+## 📄 License
+
+MIT License — do whatever you want, just don’t remove attribution.
+
